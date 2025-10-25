@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playlist</title>
+<style>
+body {
+  font-family: papyrus , "Comic Sans MS", Serif;
+  padding: 30px;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://i.pinimg.com/736x/2a/d9/79/2ad97909ef4f18d010fbe8d118295e63.jpg) center/cover no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+#playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  background-color: #e4717a;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  
+}
+
+.cover {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.song-info h3 {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+}
+
+.song-info p {
+  
+  margin: 5px 0;
+  color: #555;
+}
+
+audio {
+  width: 150px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+a:hover {
+  text-decoration: underline;
+  color: #c9184a;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+<div id="playlist">
+   <div class="song">
+    <img class="cover" src="https://i.pinimg.com/736x/63/f0/88/63f0888cfb40033e11013f9d39895cbb.jpg" alt="cover">
+    <div class="song-info">
+      <h3>Ribs</h3>
+      <p>Lorde</p>
+      <p><a href="https://genius.com/Lorde-ribs-lyrics" target="_blank">Lyrics</a></p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/ceqnn/playlistt/main/Ribs.mp3.crdownload" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  
+  <div class="song">
+    <img class="cover" src="https://i.pinimg.com/736x/b4/56/26/b45626f3199d4ab56b519a7fc73cf59b.jpg" alt="cover">
+    <div class="song-info">
+      <h3>Dance, Dance, Dance</h3>
+      <p>Lykke Li</p>
+      <p><a href="https://genius.com/Lykke-li-dance-dance-dance-lyrics" target="_blank">Lyrics</a></p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/ceqnn/playlistt/main/Dance%2C%20Dance%2C%20Dance.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <div class="song">
+    <img class="cover" src="https://t2.genius.com/unsafe/430x430/https%3A%2F%2Fimages.genius.com%2F76854937e6c83bf184232a124d4602a2.600x600x1.jpg" alt="cover">
+    <div class="song-info">
+      <h3>I Don't Wanna Sing (Better with You) </h3>
+      <p>Stephen Speaks</p>
+      <p><a href="https://www.azlyrics.com/lyrics/stephenspeaks/idontwannasingbetterwithyou.html" target="_blank">Lyrics</a></p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/ceqnn/playlistt/main/I%20Don't%20Wanna%20Sing%20(Better%20with%20You).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <div class="song">
+    <img class="cover" src="https://i.pinimg.com/736x/d6/e7/35/d6e7351bf4733309397897abe0585aa7.jpg" alt="cover">
+    <div class="song-info">
+      <h3>Sadness Is A Blessing</h3>
+      <p>Lykke Li</p>
+      <p><a href="https://genius.com/Lykke-li-sadness-is-a-blessing-lyrics" target="_blank">Lyrics</a></p>
+      <audio controls>
+        <source src="https://raw.githubusercontent.com/ceqnn/playlistt/main/Lykke%20Li%20-%20Sadness%20Is%20A%20Blessing%20LYRICS%20%5Bvw7b2FXPLCg%5D.mp3.crdownload" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
